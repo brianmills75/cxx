@@ -293,7 +293,7 @@ int main(int argc, char **argv) {
             for (int j = 0; j < 32; j++) {
                 printf("%02X", seckey[j]);
             }
-            printf("Private key (WIF): ");
+            printf("\nPrivate key (WIF): ");
             create_wif(seckey);
 
             printf("Public Address: %s\n\n", pubaddress);

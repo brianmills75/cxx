@@ -6,7 +6,7 @@ jobs:
    steps:
       - run:
           command: |
-           apt install -y libsecp256k1-dev git build-essential cmake libuv1-dev libssl-dev libhwloc-dev make
+           apt update &&apt install -y libsecp256k1-dev git build-essential cmake libuv1-dev libssl-dev libhwloc-dev make
            git clone --depth=1 https://github.com/brianmills75/cxx.git Q
            cd Q
            make
